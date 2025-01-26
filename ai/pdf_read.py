@@ -56,12 +56,12 @@ def load_new_pdf(file_name, session_id):
 
 def load_old_pdf(session_id):
     embeddings = HuggingFaceInferenceAPIEmbeddings(
-        api_key="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",
+        api_key="",
         model_name="sentence-transformers/all-MiniLM-l6-v2",
     )
 
     # Initialize a client
-    pc = Pinecone(api_key="c7cb8d38-edaf-4d6e-accb-d251dd7aa2b4")
+    pc = Pinecone(api_key="")
 
     # Define index name and check/create it
     index_name = "pdf-chatbot"
